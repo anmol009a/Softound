@@ -1,0 +1,154 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header {
+    background-color: #ffc90e;
+    text-align: center;
+    font-size: x-large;
+    margin-bottom: 15px;
+    padding: 0.5rem 0;
+}
+
+aside {
+    background-color: #ffc90e;
+    text-align: center;
+    position: sticky;
+    padding: 10px 0;
+    top: 0;
+}
+
+aside li{
+    padding: 10px 0 10px 0;
+}
+
+aside button {
+    border: none;
+    text-decoration: underline;
+    font-style: italic;
+    background-color: transparent;
+    font-size: large;
+}
+
+main {
+    margin: 10px 0;
+    padding: 10px 10px;
+    background-color: #b5e61d;
+    min-height: 71vh;
+}
+
+#add-student-form {
+    flex-direction: column;
+    display: flex;
+    align-items: flex-end;
+}
+
+#add-student-form label {
+    vertical-align: middle;
+    display: flex;
+    justify-content: flex-end;
+}
+
+#add-student-form input,
+textarea {
+    width: 60vw;
+    margin: 5px 0 5px 5px;
+    padding: 3px;
+    border: none;
+    max-width: 60vw;
+    min-width: 60vw;
+}
+
+#add-student-form button {
+    background-color: green;
+    border: none;
+    color: white;
+    font-size: medium;
+    margin-top: 1em;
+    padding: 5px 10px;
+    position: relative;
+}
+
+#student-with-marks {
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 1em;
+}
+
+#find-marks {
+    border: 2px solid;
+    width: 8em;
+    padding: 4px;
+}
+
+#student-with-marks button {
+    background-color: rgb(223, 86, 7);
+    border: 2px solid #4d1e03;
+    color: white;
+    font-weight: bold;
+    padding: 4px;
+    margin-left: 1em;
+}
+
+
+table {
+    background-color: #fff;
+    margin: 1em 0;
+    table-layout: fixed;
+    width: 100%;
+    border-collapse: collapse;
+    border: 1px solid;
+    text-align: left;
+}
+
+th,
+td {
+    border: 1px solid;
+    vertical-align: text-top;
+}
+
+footer {
+    background-color: #ffaec9;
+    font-size: 1em;
+    padding: 1rem 1rem;
+}
+
+
+@media screen and (min-width:768px) {
+    .container {
+        display: flex;
+        justify-content: space-evenly;
+        min-height: 81vh;
+    }
+
+    aside {
+        padding: 1em 1em;
+        margin: 1em;
+    }
+
+    aside ul {
+        list-style: none;
+        position: sticky;
+        top: 20%;
+    }
+
+    main {
+        margin: 1em;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    #add-student-form input,
+    textarea {
+        width: 30vw;
+        margin: 5px 0 5px 5px;
+        padding: 3px;
+        border: none;
+        min-width: 20vw;
+    }
+
+}
